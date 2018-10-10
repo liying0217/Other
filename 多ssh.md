@@ -28,9 +28,7 @@
 `second.pub `
 ###### 远程主机添加公钥
 ###### 在~/.ssh/目录下新建config文件，用于配置各个公私钥对应的主机
-`# Default github user(first@mail.com)  默认配置，一般可以省略`                                `Host github.com`                                                                   `Hostname github.com`
-`User git`
-`Identityfile ~/.ssh/github`
+`# Default github user(first@mail.com)  默认配置，一般可以省略`                            `Host github.com`                                                                                          `Hostname github.com`                                                                               `User git`                                                                               `Identityfile ~/.ssh/github`
 
 
 `# second user(second@mail.com)  给一个新的Host称呼`　　　　　　　　　　　　　　　　　　　　　`Host second.github.com  // 主机名字，不能重名`　　　　　　　　　　　　　　　　　　　　　`HostName github.com   // 主机所在域名或IP`　　　　　　　　　　　　　　　　　　　　　　　　　　`User git  // 用户名称`　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　`IdentityFile C:/Users/username/.ssh/id_rsa_second  // 私钥路径`
